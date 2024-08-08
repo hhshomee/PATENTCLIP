@@ -26,7 +26,9 @@ We introduce PATENTCLIP, a multimodal model trained on large-scale design data i
 Load a PatentCLIP model:
 ```
 import open_clip
-model, _, preprocess = open_clip.create_model_and_transforms('hf-hub:ellen625/PatentCLIP_ViT_B', device=device)
+
+model, _, preprocess = open_clip.create_model_and_transforms('hf-hub:hhshomee/PatentCLIP_ViT_L', device=device)
+tokenizer = open_clip.get_tokenizer('hf-hub:hhshomee/PatentCLIP_ViT_L')
 ```
 
 #### Multimodal retrieval results 
