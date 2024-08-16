@@ -27,8 +27,8 @@ Load a PatentCLIP model:
 ```
 import open_clip
 
-model, _, preprocess = open_clip.create_model_and_transforms('hf-hub:hhshomee/PatentCLIP_ViT_L', device=device)
-tokenizer = open_clip.get_tokenizer('hf-hub:hhshomee/PatentCLIP_ViT_L')
+model, _, preprocess = open_clip.create_model_and_transforms('hf-hub:######/PatentCLIP_ViT_L', device=device)
+tokenizer = open_clip.get_tokenizer('hf-hub:######/PatentCLIP_ViT_L')
 ```
 
 #### Multimodal retrieval results 
