@@ -12,14 +12,8 @@ We introduce PATENTCLIP, a multimodal model trained on large-scale design data i
 ## PatentCLIP
 :fire: PatentCLIP is based on [CLIP](https://github.com/openai/CLIP), and we use an open source [open_clip](https://github.com/mlfoundations/open_clip) implementation for finetuning and inference.
 
-:hugs: PatentCLIP-RN50 [checkpoint](https://huggingface.co/hhshomee/PatentCLIP_RN50)
 
-:hugs: PatentCLIP-RN101 [checkpoint](https://huggingface.co/hhshomee/PatentCLIP_RN101)
-
-:hugs: PatentCLIP-ViT-B [checkpoint](https://huggingface.co/hhshomee/PatentCLIP_ViT_B)
-
-:hugs: PatentCLIP-ViT-L [checkpoint](https://huggingface.co/hhshomee/PatentCLIP_ViT_L)
-
+:hugs: PatentCLIP-ViT-B [checkpoint](https://huggingface.co/patentclip/PatentCLIP_Vit_B)
 
 
 #### Usage
@@ -27,8 +21,8 @@ Load a PatentCLIP model:
 ```
 import open_clip
 
-model, _, preprocess = open_clip.create_model_and_transforms('hf-hub:######/PatentCLIP_ViT_L', device=device)
-tokenizer = open_clip.get_tokenizer('hf-hub:######/PatentCLIP_ViT_L')
+model, _, preprocess = open_clip.create_model_and_transforms('hf-hub:patentclip/PatentCLIP_Vit_B', device=device)
+tokenizer = open_clip.get_tokenizer('hf-hub:patentclip/PatentCLIP_Vit_B')
 ```
 
 #### Multimodal retrieval results 
