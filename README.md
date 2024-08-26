@@ -58,3 +58,9 @@ Classification results (Accuracy (%)) for both CLIP and PATENTCLIP in Zero-shot 
 PATENTCLIP| RN101| 11.93| 29.92|
 | | ViT-B | 14.70 | 41.34|
 
+### Patent Image Retrieval 
+
+Training PATENTCLIP + ArcFace:
+```
+python ir_main.py
+```
