@@ -491,4 +491,3 @@ for epoch in range(1, num_epochs + 1):
     
     valuation(val_db_data, val_query_data, model, accuracy_calculator)
     valuation_calc(model, metric, loss_func, device, val_query_loader, epoch)
-ß
