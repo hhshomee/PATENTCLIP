@@ -6,15 +6,18 @@ We introduce PATENTCLIP, a multimodal model trained on large-scale design data i
 <img width="2168" alt="main_fig" src="pipeline.png">
 
 ## Dataset
-:green_book: Sample image datas from recent 5 years can be viewed and download [here](https://drive.google.com/file/d/1Tasis4QHKWaSfhaW0ZHktgBRPrSmWiH3/view?usp=share_link). 
+:green_book: We will realse full data soon.
+* Sample images from recent 5 years can be viewed and download [here](https://drive.google.com/file/d/1Tasis4QHKWaSfhaW0ZHktgBRPrSmWiH3/view?usp=share_link). 
 
-We will realse full data soon.
+* Sample generated captions for the recent 5 years patent images can be viewed and download [here](https://drive.google.com/file/d/1k5LkhaOTUChDVmJycRL2RK3apmUSraTI/view?usp=share_link).
+
+
 
 ## PatentCLIP
 :fire: PatentCLIP is based on [CLIP](https://github.com/openai/CLIP), and we use an open source [open_clip](https://github.com/mlfoundations/open_clip) implementation and incorporate class-aware classification and contrastive learning.
 
 
-:hugs: PatentCLIP-ViT-B [checkpoint](https://huggingface.co/patentclip/PatentCLIP_Vit_B)
+:hugs: PatentCLIP-ViT-B [[checkpoint]](https://huggingface.co/patentclip/PatentCLIP_Vit_B)
 
 
 ### Usage
