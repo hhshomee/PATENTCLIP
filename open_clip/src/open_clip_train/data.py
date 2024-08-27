@@ -61,7 +61,8 @@ class CsvDataset(Dataset):
 
     def calculate_class_weights(self):
         # Invert the class frequencies to get class weights
-        class_weights = [1.0 / freq if freq > 0 else 0.0 for freq in self.class_frequencies]
+        beta = 1.2
+        class_weights = [1.0 / (freq ** beta) if freq > 0 else 0.0 for freq in self.class_frequencies]
         # Convert to a tensor
         class_weights = torch.tensor(class_weights, dtype=torch.float32)
         return class_weights
